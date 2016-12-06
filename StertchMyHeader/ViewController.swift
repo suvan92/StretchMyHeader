@@ -12,8 +12,10 @@ let customCellReuseIdentifier = "customCell"
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    // MARK: Properties
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: General Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setTableViewRowDimensions()
@@ -36,5 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 75
     }
+    
+    override var prefersStatusBarHidden: Bool
+    {
+        return true
+    }
 }
-
