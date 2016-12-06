@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     // MARK: TableView
@@ -24,10 +25,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 5
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let cell = UITableViewCell()
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: customCellReuseIdentifier, for: indexPath) as! CustomTableViewCell
+        return cell
     }
-
-
 }
 
