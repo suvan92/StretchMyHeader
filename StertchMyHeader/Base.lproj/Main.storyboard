@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DjQ-a5-v7C">
-                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customCell" rowHeight="70" id="2AA-lI-jk0" customClass="CustomTableViewCell" customModule="StertchMyHeader" customModuleProvider="target">
@@ -39,7 +39,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhY-fu-sMS">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhY-fu-sMS">
                                                     <rect key="frame" x="8" y="38" width="77" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                                     <nil key="textColor"/>
@@ -48,7 +48,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="IhY-fu-sMS" firstAttribute="bottom" secondItem="Zz4-SP-Rvl" secondAttribute="bottomMargin" id="0Hx-B1-Paq"/>
+                                                <constraint firstItem="IhY-fu-sMS" firstAttribute="top" secondItem="Gxy-8w-9Ic" secondAttribute="bottom" constant="3.5" id="R4Y-wC-soK"/>
                                                 <constraint firstItem="Gxy-8w-9Ic" firstAttribute="leading" secondItem="Zz4-SP-Rvl" secondAttribute="leadingMargin" id="SJh-mk-G1Y"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Gxy-8w-9Ic" secondAttribute="trailing" id="Yg4-ux-wsN"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="IhY-fu-sMS" secondAttribute="trailing" id="ajW-K9-ddc"/>
                                                 <constraint firstItem="IhY-fu-sMS" firstAttribute="leading" secondItem="Zz4-SP-Rvl" secondAttribute="leadingMargin" id="cyg-Iu-cBM"/>
                                                 <constraint firstItem="Gxy-8w-9Ic" firstAttribute="top" secondItem="Zz4-SP-Rvl" secondAttribute="topMargin" id="dG3-bJ-oFg"/>
                                             </constraints>
@@ -67,7 +70,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DjQ-a5-v7C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="01p-No-VES"/>
+                            <constraint firstItem="DjQ-a5-v7C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Dfk-75-p0y"/>
                             <constraint firstItem="DjQ-a5-v7C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H0N-3b-SPP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DjQ-a5-v7C" secondAttribute="bottom" id="dmL-tA-Dqb"/>
                             <constraint firstAttribute="trailing" secondItem="DjQ-a5-v7C" secondAttribute="trailing" id="kGS-qQ-hNK"/>
