@@ -29,11 +29,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="CZC-Og-PaR">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="CZC-Og-PaR">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJT-qz-JCV">
-                                            <rect key="frame" x="20" y="20" width="140.5" height="29"/>
+                                            <rect key="frame" x="15" y="15" width="140.5" height="29"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -41,12 +41,12 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="wJT-qz-JCV" firstAttribute="top" secondItem="UTP-sE-ZPI" secondAttribute="top" constant="20" id="3yy-Au-8hz"/>
-                                        <constraint firstItem="CZC-Og-PaR" firstAttribute="top" secondItem="UTP-sE-ZPI" secondAttribute="top" id="QyC-v7-1sF"/>
-                                        <constraint firstAttribute="bottom" secondItem="CZC-Og-PaR" secondAttribute="bottom" id="dcN-F9-44v"/>
-                                        <constraint firstItem="CZC-Og-PaR" firstAttribute="leading" secondItem="UTP-sE-ZPI" secondAttribute="leading" id="oUC-JP-qfG"/>
-                                        <constraint firstItem="wJT-qz-JCV" firstAttribute="leading" secondItem="UTP-sE-ZPI" secondAttribute="leading" constant="20" id="rze-8g-SMl"/>
-                                        <constraint firstAttribute="trailing" secondItem="CZC-Og-PaR" secondAttribute="trailing" id="uxG-RX-BHT"/>
+                                        <constraint firstItem="wJT-qz-JCV" firstAttribute="top" secondItem="UTP-sE-ZPI" secondAttribute="top" constant="15" id="QLQ-4V-qqg"/>
+                                        <constraint firstItem="wJT-qz-JCV" firstAttribute="leading" secondItem="UTP-sE-ZPI" secondAttribute="leading" constant="15" id="SgO-Ib-fNL"/>
+                                        <constraint firstAttribute="trailing" secondItem="CZC-Og-PaR" secondAttribute="trailing" id="YSf-sb-ock"/>
+                                        <constraint firstItem="CZC-Og-PaR" firstAttribute="top" secondItem="UTP-sE-ZPI" secondAttribute="top" id="arK-0b-Nhc"/>
+                                        <constraint firstItem="CZC-Og-PaR" firstAttribute="leading" secondItem="UTP-sE-ZPI" secondAttribute="leading" id="p7Q-pV-Rjm"/>
+                                        <constraint firstAttribute="bottom" secondItem="CZC-Og-PaR" secondAttribute="bottom" id="xcK-XY-XiB"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
