@@ -14,6 +14,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // MARK: Properties
     @IBOutlet weak var tableView: UITableView!
+    let items = [
+        NewsItem(category: .World, summary: "Climate change protests, divestments meet fossil fuels realities"),
+        NewsItem(category: .Europe, summary: "Scotland's 'Yes' leader says independence vote is 'once in a lifetime"),
+        NewsItem(category: .MiddleEast, summary: "Airstrikes boost Islamic State, FBI director warns more hostages possible"),
+        NewsItem(category: .Africa, summary: "Nigeria says 70 dead in building collapse; questions S. Africa victim claim"),
+        NewsItem(category: .AsiaPacific, summary: "Despite UN ruling, Japan seeks backing for whale hunting"),
+        NewsItem(category: .Americas, summary: "Officials: FBI is tracking 100 Americans who fought alongside IS in Syria"),
+        NewsItem(category: .World, summary: "South Africa in $40 billion deal for Russian nuclear reactors"),
+        NewsItem(category: .Europe, summary: "One million babies' created by EU student exchanges")
+        ]
     
     // MARK: General Methods
     override func viewDidLoad() {
