@@ -33,10 +33,10 @@ class CustomTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func configureCell()
-    {
-        categoryLabel.text = "World"
-        headlineLabel.text = "Climate change protests, divestments meet fossil fuels realities"
-    }
+//    func configureCell()
+//    {
+//        categoryLabel.text = "World"
+//        headlineLabel.text = "Climate change protests, divestments meet fossil fuels realities"
+//    }
 
 }

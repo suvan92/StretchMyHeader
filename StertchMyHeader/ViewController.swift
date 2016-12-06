@@ -34,12 +34,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: customCellReuseIdentifier, for: indexPath) as! CustomTableViewCell
-        cell.configureCell()
+        cell.newsItem = items[indexPath.row]
         return cell
     }
     
